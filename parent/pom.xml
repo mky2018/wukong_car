@@ -6,7 +6,7 @@
 
     <groupId>com.boot.car</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -14,6 +14,7 @@
         <module>wukong-usermanager-7002</module>
         <module>wukong-salemanager-7003</module>
         <module>wukong-ordermanager-7004</module>
+        <module>wukong-api</module>
     </modules>
 
     <properties>
