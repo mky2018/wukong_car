@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Accessors(chain = true)
+@Accessors(chain = false)
 public class Clue {
     private Integer clue_id;  // 线索id
     private String clue_user_name; // 用户真实姓名
