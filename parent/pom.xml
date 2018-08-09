@@ -76,11 +76,6 @@
                 <version>${log4j.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId></groupId>
-                <artifactId></artifactId>
-            </dependency>
-
         </dependencies>
 
     </dependencyManagement>
