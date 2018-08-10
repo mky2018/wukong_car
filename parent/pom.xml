@@ -15,6 +15,7 @@
         <module>wukong-salemanager-7003</module>
         <module>wukong-ordermanager-7004</module>
         <module>wukong-api</module>
+        <module>wukong-login-7005</module>
     </modules>
 
     <properties>
