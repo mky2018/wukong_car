@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+   <table>
+       <tr>
+           <td>
+               <input type="checkbox" id="cks">全选
+           </td>
+           <td>真实姓名</td>
+           <td>手机号码</td>
+           <td>线索类型</td>
+           <td>申请意向</td>
+           <td>订单状态</td>
+           <td>操作人</td>
+
+           <td>创建时间</td>
+           <td>操作</td>
+       </tr>
+
+       <tr th:each="co:${clueList}">
+           <td>
+
+             
+                   <input th:class="ck" th:value="${co.clue_id}" type="checkbox">
+              
+           </td>
+
+           <td th:text="${co.clue_user_name}">123</td>
+           <td th:text="${co.clue_phone}"></td>
+           <td th:text="${co.clue_phone}"></td>
+           <td th:text="${co.clue_buy}"></td>
+           <td >
+               <span th:if="${co.order_status==1}">
+                   待签约
+               </span>
+               <span th:if="${co.order_status==2}">
+                   已签约
+               </span>
+               <span th:if="${co.order_status==3}">
+                   取消订单
+               </span>
+           </td>
+           <td th:text="${co.clue_handlerperson}"></td>
+           <!--<td th:text="${{co.clue_createtime}}"></td>-->
+           <td th:text="${#dates.format(co.clue_createtime,'yyyy-MM-dd HH:mm')}"></td>
+           <td >
+               <input type="button" th:value="查看详情">
+           </td>
+       </tr>
+   </table>
+</body>
+</html>

@@ -45,7 +45,7 @@ public class Clue {
     private Date clue_createtime; // 线索创建时间
     private Date clue_updatetime; // 线索修改时
     private Date clue_next_link; // 下次沟通时间
-    private Date clue_committime; // 沟通时间'
+    private Date clue_committime; // 沟通时间
 
     /**
      * 当状态为提交状态时， 提交所有的身份证正反面,驾驶本正反面。

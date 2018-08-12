@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boot.car.dao.OrderMapper">
+   <select id="selectClueList" resultType="com.boot.car.pojo.Order">
+       select clue_user_name,clue_phone,clue_buy,order_status, clue_handlerperson,clue_createtime
+           from clue c left join orders o on c.clue_id=o.clue_id;
+   </select>
+</mapper>
